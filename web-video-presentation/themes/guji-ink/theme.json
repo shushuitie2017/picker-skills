@@ -1,0 +1,29 @@
+{
+  "id": "guji-ink",
+  "name": "Guji Ink",
+  "nameZh": "古籍·和風水墨",
+  "description": "Ink on aged rice paper with a single cinnabar (vermilion seal) accent and faint red column rules — the look of a woodblock classical text. Noto Serif SC + Cormorant Garamond, generous book margins. Calm, scholarly, antique.",
+  "descriptionZh": "墨色落在陈年宣纸上，唯一饱和色取朱印红，配极淡的朱丝栏竖界行 —— 古籍刻本气质。Noto Serif SC + Cormorant Garamond，书页般的大留白。沉静、典雅、有年代感。专为古籍导读 / 典籍推介而调。",
+  "mood": [
+    "light",
+    "paper",
+    "ink",
+    "antique",
+    "editorial",
+    "calm",
+    "scholarly"
+  ],
+  "bestFor": [
+    "古籍导读 / 书籍解说",
+    "典籍推介 / 善本介绍",
+    "文史 / 国学 / 汉学科普",
+    "翻刻 / 训读 / 三语对照展示",
+    "博物馆 / 图书馆 藏品讲解"
+  ],
+  "preview": {
+    "shell": "#ddd2bd",
+    "surface": "#f4ece0",
+    "text": "#1c1815",
+    "accent": "#b03a2e"
+  }
+}

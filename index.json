@@ -232,6 +232,66 @@
       "files": ["SKILL.md", "EVOLUTION.md", "RUBRIC.md", "references/FLOW-PLAYBOOK.md", "references/FILM-FRAMEWORK.md", "references/CINEMATIC-CRAFT.md", "references/FILM-DECONSTRUCTION.md", "state/LEDGER.md", "state/TECHNIQUES.md", "state/BACKLOG.md"]
     },
     {
+      "id": "web-video-presentation", "cat": "creative", "platform": "cc", "version": "1.0",
+      "name": { "zh": "网页视频演示", "en": "Web Video Presentation", "ja": "Web動画プレゼン" },
+      "desc": {
+        "zh": "把一篇文章或口播稿做成「看起来像视频」的点击驱动 16:9/9:16 网页演示（动态 PPT 但不像 PPT）：口播稿+outline 一次对齐 → 逐章网页开发 → 可选 TTS 口播合成（MiniMax/OpenAI，provider 可换），适合录屏出片。",
+        "en": "Turn an article or narration script into a click-driven 16:9/9:16 web deck that feels like a film (dynamic slides that don't look like slides): script + outline alignment, chapter-by-chapter build, optional provider-agnostic TTS narration — ready for screen-recorded video.",
+        "ja": "記事やナレーション原稿を、クリック駆動の 16:9/9:16 Web プレゼン（動的だが PPT らしくない）に。原稿+アウトライン整合 → 章ごとに開発 → 任意の TTS でナレーション合成。録画してそのまま動画に。"
+      },
+      "scenes": {
+        "zh": ["B 站/YouTube 解说视频底稿", "有电影感的产品/演讲 demo", "竖屏短视频 deck"],
+        "en": ["Bases for YouTube explainers", "Cinematic product / talk demos", "Portrait short-video decks"],
+        "ja": ["解説動画のベース制作", "映画的なプロダクトデモ", "縦型ショート動画の deck"]
+      },
+      "example": {
+        "zh": "把这篇文章做成 16:9 网页演示，配中文口播",
+        "en": "Turn this article into a 16:9 web deck with narration",
+        "ja": "この記事を 16:9 の Web プレゼンにしてナレーション付きで"
+      },
+      "files": ["SKILL.md", "scripts/scaffold.sh", "templates/（Vite+React 脚手架 + TTS providers）", "references/THEMES.md", "references/CHAPTER-CRAFT.md", "references/AUDIO.md", "references/EXAMPLES/"]
+    },
+    {
+      "id": "remotion-4k-video", "cat": "creative", "platform": "cc", "version": "1.0",
+      "name": { "zh": "Remotion 4K 出片", "en": "Remotion 4K Render", "ja": "Remotion 4K書き出し" },
+      "desc": {
+        "zh": "把网页 deck（通常由 web-video-presentation 产出）用 Remotion 帧级重渲成颜色不失真的 4K MP4，可垫轻 BGM——解决录屏的两大痛点：颜色失真与节奏不稳，帧精确、音画锁定。",
+        "en": "Re-render a web deck (typically from web-video-presentation) into a colour-faithful 4K MP4 with Remotion — fixing screen-recording's two pains: colour shift and unstable pacing. Frame-accurate, audio locked to cuts, optional light BGM.",
+        "ja": "Web デッキを Remotion でフレーム精度の 4K MP4 に再レンダリング。画面録画の色ズレ・テンポ不安定を解消し、音声をカットに同期。軽い BGM も可。"
+      },
+      "scenes": {
+        "zh": ["网页演示导出成品视频", "颜色要求严格的出片", "音画帧级对齐"],
+        "en": ["Export web decks to final video", "Colour-critical renders", "Frame-locked audio sync"],
+        "ja": ["Web プレゼンの動画化", "色再現が重要な書き出し", "フレーム単位の音声同期"]
+      },
+      "example": {
+        "zh": "把这个 presentation 目录渲染成 4K MP4",
+        "en": "Render this presentation folder to a 4K MP4",
+        "ja": "この presentation フォルダを 4K MP4 に書き出して"
+      },
+      "files": ["SKILL.md", "templates/（Remotion 组件 + 帧驱动动画）", "references/FRAME-DRIVEN-ANIMATION.md", "scripts/"]
+    },
+    {
+      "id": "evolving-video", "cat": "creative", "platform": "cc", "version": "1.0",
+      "name": { "zh": "自进化短片工坊", "en": "Evolving Video", "ja": "自己進化ショート工房" },
+      "desc": {
+        "zh": "全自主端到端做短片：自采公有领域素材 + 自动作曲配乐 + Remotion 动效 → 自我盲评打分 → 把经验写进 state/，沿严格能力阶梯跨会话自我进化。每次调用 = 一个进化周期。",
+        "en": "Autonomously produce short films end-to-end: self-collected public-domain assets, self-composed score, Remotion motion — then blind self-critique, persist lessons to state/, and climb a strict capability ladder across sessions. One invocation = one evolution cycle.",
+        "ja": "ショート動画を完全自律制作：PD 素材の自己収集＋自動作曲＋Remotion モーション → ブラインド自己批評 → 学びを state/ に永続化し、能力ラダーをセッション横断で登る。1 回の呼び出し＝1 進化サイクル。"
+      },
+      "scenes": {
+        "zh": ["让 AI 自己练出片能力", "公有领域素材短片量产", "信息流短视频实验"],
+        "en": ["Let the AI train its own filmmaking", "Batch PD-asset shorts", "Feed-native short experiments"],
+        "ja": ["AI に映像力を自己練習させる", "PD 素材ショート量産", "フィード向けショート実験"]
+      },
+      "example": {
+        "zh": "跑一个进化周期，做下一支短片",
+        "en": "Run one evolution cycle — make the next short",
+        "ja": "進化サイクルを 1 回まわして次の 1 本を"
+      },
+      "files": ["SKILL.md", "EVOLUTION.md", "RUBRIC.md", "MODEL-USAGE.md", "scripts/fetch_assets.py", "scripts/compose_score.py", "state/（LEDGER/TECHNIQUES/BACKLOG/METRICS 模板）"]
+    },
+    {
       "id": "context-handoff", "cat": "office", "platform": "cc", "version": "1.0",
       "name": { "zh": "会话交接", "en": "Context Handoff", "ja": "セッション引き継ぎ" },
       "desc": {

@@ -57,6 +57,9 @@ cp -r picker-skills/<skill-id> ~/.claude/skills/
 | ID | 说明 / Description |
 |---|---|
 | [`flow-cinema`](./flow-cinema) | 用 Google Flow（Veo 3.1）端到端拍多镜头电影短片，自我进化 / Direct multi-shot AI short films end-to-end with Google Flow (Veo 3.1), self-evolving |
+| [`web-video-presentation`](./web-video-presentation) | 文章/口播稿 → 点击驱动的「像视频」网页演示 + 可选 TTS 口播 / Article → click-driven film-like web deck with optional TTS narration |
+| [`remotion-4k-video`](./remotion-4k-video) | 网页 deck → Remotion 帧级重渲 4K MP4（颜色保真、音画锁定）/ Web deck → colour-faithful frame-accurate 4K MP4 via Remotion |
+| [`evolving-video`](./evolving-video) | 全自主短片生成 + 盲评自我进化（PD 素材 + 自动配乐 + Remotion）/ Autonomous self-evolving short-film production |
 
 ### 办公效率 / Productivity
 | ID | 说明 / Description |

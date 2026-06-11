@@ -1,0 +1,9 @@
+{
+  "name": "remotion-4k-video",
+  "version": "1.0.0",
+  "category": "Web Video / Rendering",
+  "description": "Re-render a click-driven web deck (Vite+React+TS, e.g. an audiobook presentation) into a color-faithful 4K MP4 with Remotion, then optionally mix in a subtle BGM. Encodes the hard-won rule that Remotion does NOT play CSS animations/transitions (frozen page clock per frame) and must use useCurrentFrame()+interpolate()/spring(); ships a reusable frame-driven animation primitive library, an audio-locked timeline generator (mp3 + 120ms trail), still-frame verification, and a video-copy BGM mixer.",
+  "compat": [
+    "claude-code"
+  ]
+}

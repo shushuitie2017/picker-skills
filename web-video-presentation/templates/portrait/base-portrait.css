@@ -1,0 +1,18 @@
+/* ─────────────────────────────────────────────────────────────────────
+ * PORTRAIT 9:16 override — appended to base.css by
+ * `scaffold.sh --orient=portrait`.
+ *
+ * Imported AFTER the theme's tokens.css (see App.tsx import order), so any
+ * rule here wins over the theme. We deliberately override ONLY the stage
+ * canvas size — the single rule that is hard-locked to landscape in base.css.
+ * Padding (--stage-pad-x/y) is intentionally left to the theme + chapters so
+ * we don't fight the active theme's density knobs.
+ *
+ * Works for both the web deck (Stage.tsx scales this frame to the viewport)
+ * and the Remotion render (RemotionStage wraps a 1080×1920 .stage-frame and
+ * scales it ×2 to fill 2160×3840).
+ * ───────────────────────────────────────────────────────────────────── */
+.stage-frame {
+  width: 1080px;
+  height: 1920px;
+}

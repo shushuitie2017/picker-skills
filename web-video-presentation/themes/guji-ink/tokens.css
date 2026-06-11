@@ -1,0 +1,73 @@
+/* ─────────────────────────────────────────────────────────────────────
+ * Theme · guji-ink  (古籍·和風水墨)
+ *   Ink on aged rice paper — the reading room of a woodblock classical
+ *   text rendered as a stage. The INK is a warm near-black (not pure
+ *   #000), the paper is a warm porcelain-rice tone, and the ONE saturated
+ *   hue is cinnabar / vermilion (朱) — the colour of a seal impression
+ *   and of the column rules (朱絲欄) on a hand-ruled manuscript page.
+ *
+ *   character knobs:
+ *     • ink           — warm near-black #1c1815 (headings / body / nums)
+ *     • accent        — cinnabar 朱 #b03a2e, the sole saturated colour
+ *     • hero numbers  — upright Cormorant/serif (NOT italic — classical)
+ *     • rule          — 1px solid faint aged-paper hairline
+ *     • card          — near-square corners (刻本框格 feel)
+ *     • SIGNATURE     — faint vertical cinnabar column rules (朱絲欄)
+ *                       every 120px, the single decoration motif
+ *     • motion        — quiet, book-paced (slower than warm-keynote)
+ * ───────────────────────────────────────────────────────────────────── */
+:root {
+  /* ─── palette: aged rice paper + ink ─── */
+  --shell:        #ddd2bd;             /* darker aged paper for letterbox */
+  --surface:      #f4ece0;             /* warm rice-paper stage */
+  --surface-2:    #faf4e9;             /* elevated leaf (cards) */
+  --surface-3:    #ece2d2;             /* nested layer */
+  --text:         #1c1815;             /* SIGNATURE — warm ink, not pure black */
+  --text-2:       #3a332c;             /* 淡墨 secondary */
+  --text-mute:    #6b6052;             /* tags / metadata */
+  --text-faint:   #9c9080;             /* hints / disabled */
+  --rule:         #cdbfa8;             /* aged hairline */
+  --accent:       #b03a2e;             /* 朱 cinnabar — the ONLY saturated hue */
+  --accent-soft:  rgba(176, 58, 46, 0.10);
+  --accent-glow:  rgba(176, 58, 46, 0.28);
+
+  /* ─── fonts: Mincho / Song serif + classical Latin serif ─── */
+  --font-display-cn: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  --font-display-en: "Cormorant Garamond", "EB Garamond", "Playfair Display", "Times New Roman", serif;
+  --font-body:       "Source Serif 4", "Noto Serif SC", "Source Han Serif SC", Georgia, serif;
+  --font-mono:       "IBM Plex Mono", "JetBrains Mono", ui-monospace, monospace;
+  --font-features:   "ss01", "tnum", "lnum", "kern";
+
+  /* ─── motion: quiet, book-paced ─── */
+  --dur-base:       700ms;
+  --dur-slow:       1100ms;
+  --dur-cinematic:  1600ms;
+
+  /* ─── design identity: woodblock classical ─── */
+  --r-card:        2px;                /* near-square, 刻本框格 */
+  --r-stage:       0;
+  --rule-w:        1px;
+  --rule-style:    solid;
+  --hero-num-font:    var(--font-display-en);
+  --hero-num-style:   normal;          /* upright — classical, not italic */
+  --hero-num-weight:  500;
+  --hero-num-track:   -0.01em;
+  --stage-pad-x:   140px;              /* wide book margins */
+  --stage-pad-y:   96px;
+  --card-shadow:
+    0 1px 0 var(--rule),
+    0 16px 44px rgba(28, 24, 21, 0.10);
+  --shadow-stage:
+    0 60px 160px rgba(28, 24, 21, 0.22),
+    0 0 0 1px rgba(28, 24, 21, 0.05);
+
+  /* SIGNATURE motif (single): faint vermilion vertical column rules — 朱絲欄. */
+  --surface-pattern:
+    repeating-linear-gradient(90deg,
+      transparent 0,
+      transparent 119px,
+      rgba(176, 58, 46, 0.05) 119px,
+      rgba(176, 58, 46, 0.05) 120px);
+  --surface-pattern-size:  120px 100%;
+  --surface-pattern-blend: multiply;
+}
