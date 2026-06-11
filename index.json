@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "updated": "2026-06-11",
+  "repo": "shushuitie2017/picker-skills",
+  "site": "https://picker.bluecatbot.com",
+  "categories": {
+    "research":  { "zh": "调研分析", "en": "Research", "ja": "リサーチ" },
+    "coding":    { "zh": "编程开发", "en": "Coding & Dev", "ja": "開発" },
+    "writing":   { "zh": "写作创作", "en": "Writing", "ja": "ライティング" },
+    "office":    { "zh": "办公效率", "en": "Productivity", "ja": "業務効率" }
+  },
+  "skills": [
+    {
+      "id": "oss-deep-analysis", "cat": "research", "platform": "cc", "version": "1.0",
+      "name": { "zh": "开源项目深度分析", "en": "OSS Deep Analysis", "ja": "OSS深掘り分析" },
+      "desc": {
+        "zh": "输入任意 GitHub/GitLab 仓库，产出一份「值不值得用」的单文件 HTML 深度分析报告：价值主张、架构解读、成熟度、社区健康、竞品对比、采用建议与反方论证。",
+        "en": "Point it at any GitHub/GitLab repo and get a single-file HTML deep-analysis report: value proposition, architecture, maturity, community health, competitive landscape, and an adopt/trial/hold verdict with a counter-argument.",
+        "ja": "任意の GitHub/GitLab リポジトリを指定すると、価値・アーキテクチャ・成熟度・コミュニティ・競合比較・採用判定までを 1 つの HTML レポートで出力。"
+      },
+      "scenes": {
+        "zh": ["技术选型前评估开源库", "学习新框架前快速摸底", "写技术调研报告"],
+        "en": ["Evaluate a library before adopting it", "Scout a new framework before learning it", "Write tech due-diligence reports"],
+        "ja": ["採用前の OSS 評価", "新フレームワーク学習前の下調べ", "技術調査レポート作成"]
+      },
+      "example": {
+        "zh": "分析一下 vuejs/core 这个仓库值不值得深入学",
+        "en": "Analyze whether vuejs/core is worth learning in depth",
+        "ja": "vuejs/core を深く学ぶ価値があるか分析して"
+      },
+      "files": ["SKILL.md", "README.md", "assets/report-template.html", "references/analysis-framework.md", "references/design-system.md", "scripts/gather_repo.py"]
+    },
+    {
+      "id": "repo-value-analysis", "cat": "research", "platform": "cc", "version": "1.0",
+      "name": { "zh": "仓库价值分析", "en": "Repo Value Analysis", "ja": "リポジトリ価値分析" },
+      "desc": {
+        "zh": "对任意代码仓库（含私有/内部项目）输出一份观点鲜明、证据驱动的核心价值论证报告，固定暗色 trading-terminal × 编辑部视觉风格的单文件 HTML。",
+        "en": "Argues the core value of any code repository (incl. private/internal) in an opinionated, evidence-based single-file HTML report with a fixed dark trading-terminal editorial style.",
+        "ja": "任意のリポジトリ（社内・非公開含む）の中核価値を、証拠ベースで論証する単一 HTML レポートを生成。ダークなトレーディング端末風デザイン。"
+      },
+      "scenes": {
+        "zh": ["内部项目价值评估", "给老板/投资人讲清一个项目", "技术资产盘点"],
+        "en": ["Assess internal projects", "Pitch a project to stakeholders", "Audit your tech assets"],
+        "ja": ["社内プロジェクト評価", "ステークホルダー向け説明", "技術資産の棚卸し"]
+      },
+      "example": {
+        "zh": "评估一下我们这个内部工具仓库的核心价值",
+        "en": "Assess the core value of this internal tool repo",
+        "ja": "この社内ツールのリポジトリの価値を評価して"
+      },
+      "files": ["SKILL.md"]
+    },
+    {
+      "id": "debug-backend", "cat": "coding", "platform": "uni", "version": "1.0",
+      "name": { "zh": "后端调试", "en": "Backend Debugger", "ja": "バックエンドデバッグ" },
+      "desc": {
+        "zh": "后端 bug 系统化诊断流程：解析错误栈→定位根因→最小修复→回归验证，附常见错误类型对照表。",
+        "en": "A systematic backend debugging workflow: parse the stack trace, locate the root cause, apply a minimal fix, verify with regression checks.",
+        "ja": "スタックトレース解析→原因特定→最小修正→回帰確認まで、体系的なバックエンドデバッグ手順。"
+      },
+      "scenes": {
+        "zh": ["线上报错排查", "看不懂的堆栈交给它", "修完怕引入新 bug"],
+        "en": ["Triage production errors", "Decode cryptic stack traces", "Fix without breaking things"],
+        "ja": ["本番エラーの切り分け", "難解なスタックトレース解読", "安全な修正"]
+      },
+      "example": {
+        "zh": "这个接口报 500，这是日志，帮我按流程排查",
+        "en": "This endpoint throws 500 — here's the log, debug it step by step",
+        "ja": "この API が 500 を返す。ログを見て手順通り調べて"
+      },
+      "files": ["SKILL.md"]
+    },
+    {
+      "id": "review", "cat": "coding", "platform": "uni", "version": "1.0",
+      "name": { "zh": "代码审查", "en": "Code Review", "ja": "コードレビュー" },
+      "desc": {
+        "zh": "后端代码审查清单：SQL 注入等安全项、性能隐患、错误处理、可维护性逐项检查，输出分级问题列表。",
+        "en": "Backend code review checklist: security (SQLi etc.), performance, error handling and maintainability — graded findings list.",
+        "ja": "セキュリティ・性能・エラー処理・保守性をチェックリストで逐項レビューし、重要度別に指摘。"
+      },
+      "scenes": {
+        "zh": ["提 PR 前自查", "审同事的代码", "接手老代码先体检"],
+        "en": ["Self-review before a PR", "Review teammates' code", "Health-check legacy code"],
+        "ja": ["PR 前のセルフレビュー", "他人のコードレビュー", "レガシーコードの健診"]
+      },
+      "example": {
+        "zh": "审查这个支付模块的代码",
+        "en": "Review this payment module",
+        "ja": "この決済モジュールをレビューして"
+      },
+      "files": ["SKILL.md"]
+    },
+    {
+      "id": "test", "cat": "coding", "platform": "uni", "version": "1.0",
+      "name": { "zh": "测试生成", "en": "Test Generator", "ja": "テスト生成" },
+      "desc": {
+        "zh": "自动探测项目既有测试框架（JUnit/pytest/Jest…），按项目惯例生成单元测试与集成测试，覆盖边界与异常路径。",
+        "en": "Detects your test framework (JUnit/pytest/Jest…) and generates unit & integration tests following project conventions, covering edge cases and error paths.",
+        "ja": "プロジェクトのテストフレームワークを自動検出し、慣例に沿って単体・結合テストを生成。境界値と異常系もカバー。"
+      },
+      "scenes": {
+        "zh": ["补历史代码的测试", "新功能配套用例", "提升覆盖率"],
+        "en": ["Backfill tests for legacy code", "Tests for new features", "Raise coverage"],
+        "ja": ["レガシーコードのテスト補完", "新機能のテスト", "カバレッジ向上"]
+      },
+      "example": {
+        "zh": "给这个 service 层生成完整测试",
+        "en": "Generate full tests for this service layer",
+        "ja": "この service 層のテストを生成して"
+      },
+      "files": ["SKILL.md"]
+    },
+    {
+      "id": "sql", "cat": "coding", "platform": "uni", "version": "1.0",
+      "name": { "zh": "SQL 优化", "en": "SQL Optimizer", "ja": "SQL最適化" },
+      "desc": {
+        "zh": "SQL 审查、优化与 schema 设计：执行计划分析、索引建议、慢查询改写、范式与反范式权衡。",
+        "en": "SQL review, optimization and schema design: execution-plan analysis, index advice, slow-query rewrites, normalization trade-offs.",
+        "ja": "実行計画の分析、インデックス提案、スロークエリ書き換え、スキーマ設計まで対応。"
+      },
+      "scenes": {
+        "zh": ["慢查询优化", "建表前设计评审", "索引怎么加"],
+        "en": ["Speed up slow queries", "Schema design review", "Index strategy"],
+        "ja": ["スロークエリ改善", "スキーマ設計レビュー", "インデックス戦略"]
+      },
+      "example": {
+        "zh": "这条查询要 8 秒，帮我优化",
+        "en": "This query takes 8s — optimize it",
+        "ja": "このクエリが 8 秒かかる。最適化して"
+      },
+      "files": ["SKILL.md"]
+    },
+    {
+      "id": "api", "cat": "coding", "platform": "uni", "version": "1.0",
+      "name": { "zh": "API 生成", "en": "API Scaffolder", "ja": "API生成" },
+      "desc": {
+        "zh": "按项目既有框架与分层惯例，生成 RESTful API 全套代码：controller、service、repository、entity、DTO 一次到位。",
+        "en": "Generates a full RESTful endpoint following your project's framework and layering: controller, service, repository, entity and DTOs in one pass.",
+        "ja": "プロジェクトの構成に合わせて controller〜DTO まで REST API 一式を生成。"
+      },
+      "scenes": {
+        "zh": ["快速加一个接口", "保持分层一致性", "样板代码不想手写"],
+        "en": ["Add an endpoint fast", "Keep layering consistent", "Skip boilerplate"],
+        "ja": ["エンドポイント追加", "レイヤー構成の統一", "ボイラープレート削減"]
+      },
+      "example": {
+        "zh": "加一个订单查询接口，按现有项目结构来",
+        "en": "Add an order-lookup endpoint following the existing structure",
+        "ja": "既存構成に合わせて注文照会 API を追加して"
+      },
+      "files": ["SKILL.md"]
+    },
+    {
+      "id": "commit", "cat": "coding", "platform": "cc", "version": "1.0",
+      "name": { "zh": "规范提交", "en": "Conventional Commit", "ja": "規約コミット" },
+      "desc": {
+        "zh": "读取当前改动，自动生成符合 Conventional Commits 规范的提交信息并完成 git commit。",
+        "en": "Reads your working changes and creates a git commit with a proper Conventional Commits message.",
+        "ja": "変更内容を読み取り、Conventional Commits 準拠のメッセージで自動コミット。"
+      },
+      "scenes": {
+        "zh": ["懒得想 commit message", "团队规范统一", "整理提交历史"],
+        "en": ["Stop bikeshedding commit messages", "Enforce team conventions", "Clean history"],
+        "ja": ["コミットメッセージ自動化", "チーム規約の統一", "履歴整理"]
+      },
+      "example": {
+        "zh": "/commit 把当前改动提交了",
+        "en": "/commit the current changes",
+        "ja": "/commit で今の変更をコミット"
+      },
+      "files": ["SKILL.md"]
+    },
+    {
+      "id": "note-writer", "cat": "writing", "platform": "cc", "version": "1.0",
+      "name": { "zh": "note 爆款写作", "en": "note.com Hit Writer", "ja": "note執筆インテリジェンス" },
+      "desc": {
+        "zh": "note.com/Zenn 写作智能库：14 种文章类型、25 个标题公式、19 种开头、13 套结构模板、5 种作家文体、15 种发布策略，内置 BM25 检索引擎按需调取。",
+        "en": "A writing intelligence base for note.com/Zenn: 14 article types, 25 title formulas, 19 openings, 13 structure templates, 5 author styles and 15 publishing strategies, queried via a built-in BM25 search engine.",
+        "ja": "note.com/Zenn 向けライティング知能：14 記事タイプ、25 タイトル公式、19 書き出し、13 構成テンプレート、5 作家スタイル、15 公開戦略。BM25 検索エンジン内蔵。"
+      },
+      "scenes": {
+        "zh": ["写日文自媒体文章", "标题想不出来", "对照爆款结构改稿"],
+        "en": ["Write Japanese blog posts that land", "Generate title options", "Restructure drafts against proven templates"],
+        "ja": ["バズる note 記事を書く", "タイトル案出し", "構成テンプレで推敲"]
+      },
+      "example": {
+        "zh": "用情感类模板帮我把这段经历写成 note 文章",
+        "en": "Turn this experience into a note.com article using the emotional template",
+        "ja": "この体験を感情型テンプレで note 記事にして"
+      },
+      "files": ["SKILL.md", "data/article-types.csv", "data/titles.csv", "data/openings.csv", "data/structures.csv", "data/techniques.csv", "data/author-styles.csv", "data/endings.csv", "data/publishing.csv", "scripts/search.py"]
+    },
+    {
+      "id": "context-handoff", "cat": "office", "platform": "cc", "version": "1.0",
+      "name": { "zh": "会话交接", "en": "Context Handoff", "ja": "セッション引き継ぎ" },
+      "desc": {
+        "zh": "AI 会话上下文快满时，把当前目标、已完成、进行中、关键决策、下一步全部落盘成 HANDOFF.md，/clear 后新会话读一个文件即可无缝接力。",
+        "en": "When your AI session context is nearly full, it writes goals, progress, decisions and next steps into HANDOFF.md — a fresh session reads one file and picks up seamlessly.",
+        "ja": "コンテキスト逼迫時に目標・進捗・決定事項・次の一手を HANDOFF.md に書き出し、新セッションが 1 ファイルで引き継ぎ可能に。"
+      },
+      "scenes": {
+        "zh": ["长任务跨多个会话", "上下文爆了不想丢进度", "团队成员接手你的会话"],
+        "en": ["Long tasks across sessions", "Context overflow without losing progress", "Hand a session to a teammate"],
+        "ja": ["セッションをまたぐ長期タスク", "コンテキスト溢れ対策", "他メンバーへの引き継ぎ"]
+      },
+      "example": {
+        "zh": "上下文快满了，做一份交接文档",
+        "en": "Context is nearly full — write a handoff doc",
+        "ja": "コンテキストが限界。引き継ぎ文書を作って"
+      },
+      "files": ["SKILL.md"]
+    },
+    {
+      "id": "notebooklm", "cat": "office", "platform": "cc", "version": "1.0",
+      "name": { "zh": "NotebookLM 自动化", "en": "NotebookLM Automation", "ja": "NotebookLM自動化" },
+      "desc": {
+        "zh": "Google NotebookLM 全功能编程访问：建笔记本、批量加源、生成播客/解说视频/报告并下载，含 Web 界面没有的能力。",
+        "en": "Full programmatic access to Google NotebookLM: create notebooks, batch-add sources, generate podcasts / video overviews / reports and download them — including features absent from the web UI.",
+        "ja": "Google NotebookLM の完全自動化：ノート作成、ソース一括追加、ポッドキャスト・解説動画・レポート生成とダウンロードまで。"
+      },
+      "scenes": {
+        "zh": ["把视频/文档变播客", "批量内容总结", "生成解说视频"],
+        "en": ["Turn docs/videos into podcasts", "Batch summarization", "Generate video overviews"],
+        "ja": ["資料をポッドキャスト化", "一括要約", "解説動画生成"]
+      },
+      "example": {
+        "zh": "用这 3 个链接建个笔记本，生成一期中文播客",
+        "en": "Build a notebook from these 3 links and generate a podcast",
+        "ja": "この 3 つのリンクでノートを作りポッドキャストを生成して"
+      },
+      "files": ["SKILL.md"]
+    }
+  ]
+}
