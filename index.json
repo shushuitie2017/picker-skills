@@ -7,7 +7,8 @@
     "research":  { "zh": "调研分析", "en": "Research", "ja": "リサーチ" },
     "coding":    { "zh": "编程开发", "en": "Coding & Dev", "ja": "開発" },
     "writing":   { "zh": "写作创作", "en": "Writing", "ja": "ライティング" },
-    "office":    { "zh": "办公效率", "en": "Productivity", "ja": "業務効率" }
+    "office":    { "zh": "办公效率", "en": "Productivity", "ja": "業務効率" },
+    "creative":  { "zh": "创意制作", "en": "Creative", "ja": "クリエイティブ" }
   },
   "skills": [
     {
@@ -189,6 +190,46 @@
         "ja": "この体験を感情型テンプレで note 記事にして"
       },
       "files": ["SKILL.md", "data/article-types.csv", "data/titles.csv", "data/openings.csv", "data/structures.csv", "data/techniques.csv", "data/author-styles.csv", "data/endings.csv", "data/publishing.csv", "scripts/search.py"]
+    },
+    {
+      "id": "dev-commons", "cat": "coding", "platform": "cc", "version": "1.0",
+      "name": { "zh": "跨项目开发模式库", "en": "Dev Commons", "ja": "開発パターン集" },
+      "desc": {
+        "zh": "从 30+ 真实项目提炼的 140+ 条开发模式：Flask/Electron/Next.js/Python/前端/安全/Git 发布/Windows 踩坑等 9 大领域，内置 BM25 检索引擎按需调取。",
+        "en": "140+ development patterns distilled from 30+ real projects across 9 domains — Flask, Electron, Next.js, Python, frontend, security, git/release, Windows pitfalls — queried via a built-in BM25 search engine.",
+        "ja": "実プロジェクト 30+ から抽出した 140+ の開発パターン。Flask/Electron/Next.js/Python/フロント/セキュリティ/Git/Windows の 9 領域、BM25 検索エンジン内蔵。"
+      },
+      "scenes": {
+        "zh": ["新项目脚手架沿用成熟模式", "踩 Windows 坑前先查一下", "代码规范与安全清单"],
+        "en": ["Scaffold new projects on proven patterns", "Check Windows pitfalls before hitting them", "Security & convention checklists"],
+        "ja": ["実績あるパターンで新規構築", "Windows の落とし穴を事前確認", "規約・セキュリティチェック"]
+      },
+      "example": {
+        "zh": "查一下 Flask SSE 进度推送的成熟写法",
+        "en": "Look up the proven pattern for Flask SSE progress streaming",
+        "ja": "Flask の SSE 進捗配信の定石を調べて"
+      },
+      "files": ["SKILL.md", "data/flask-patterns.csv", "data/electron-patterns.csv", "data/nextjs-patterns.csv", "data/python-patterns.csv", "data/frontend-patterns.csv", "data/security-patterns.csv", "data/windows-pitfalls.csv", "data/git-release.csv", "data/code-conventions.csv", "scripts/search.py"]
+    },
+    {
+      "id": "flow-cinema", "cat": "creative", "platform": "cc", "version": "1.0",
+      "name": { "zh": "AI 短片导演", "en": "Flow Cinema", "ja": "AI短編映画監督" },
+      "desc": {
+        "zh": "用 Google Flow（Veo 3.1）端到端拍多镜头电影短片：9 幕分镜框架→逐镜生成→角色一致性选角→自评打分→下载与后期方案，且每个周期把经验沉淀进 state/ 自我进化。",
+        "en": "Direct multi-shot cinematic shorts end-to-end with Google Flow (Veo 3.1): 9-act storyboarding, shot-by-shot generation, character-consistent casting, self-scored critique, downloads and a post-production plan — persisting lessons to state/ so every cycle improves.",
+        "ja": "Google Flow（Veo 3.1）でマルチショット短編映画を一貫制作：9 幕絵コンテ→ショット生成→キャラ一貫キャスティング→自己採点→ダウンロードと後処理計画。学びを state/ に蓄積し自己進化。"
+      },
+      "scenes": {
+        "zh": ["AI 视频短片创作", "分镜与镜头语言学习", "批量生成风格一致的镜头"],
+        "en": ["Create AI short films", "Learn shot design & film grammar", "Batch-generate style-consistent shots"],
+        "ja": ["AI 短編映画づくり", "絵コンテ・映像文法の学習", "スタイル統一ショットの量産"]
+      },
+      "example": {
+        "zh": "用赛博朋克风拍一部 10 镜的雨夜侦探短片",
+        "en": "Shoot a 10-shot cyberpunk detective short set on a rainy night",
+        "ja": "サイバーパンク調で雨夜の探偵短編を 10 ショット撮って"
+      },
+      "files": ["SKILL.md", "EVOLUTION.md", "RUBRIC.md", "references/FLOW-PLAYBOOK.md", "references/FILM-FRAMEWORK.md", "references/CINEMATIC-CRAFT.md", "references/FILM-DECONSTRUCTION.md", "state/LEDGER.md", "state/TECHNIQUES.md", "state/BACKLOG.md"]
     },
     {
       "id": "context-handoff", "cat": "office", "platform": "cc", "version": "1.0",

@@ -46,11 +46,17 @@ cp -r picker-skills/<skill-id> ~/.claude/skills/
 | [`sql`](./sql) | SQL 审查、优化与 schema 设计 / SQL review, optimization & schema design |
 | [`api`](./api) | RESTful API 全层代码生成 / Full-stack REST endpoint scaffolding |
 | [`commit`](./commit) | Conventional Commits 规范化提交 / Conventional commit automation |
+| [`dev-commons`](./dev-commons) | 从 30+ 真实项目提炼的 140+ 条开发模式，BM25 检索 / 140+ dev patterns from 30+ real projects, BM25-searchable |
 
 ### 写作创作 / Writing
 | ID | 说明 / Description |
 |---|---|
 | [`note-writer`](./note-writer) | note.com/Zenn 写作智能：14 文章类型、25 标题公式、BM25 检索 / Writing intelligence for note.com/Zenn with a BM25 search engine |
+
+### 创意制作 / Creative
+| ID | 说明 / Description |
+|---|---|
+| [`flow-cinema`](./flow-cinema) | 用 Google Flow（Veo 3.1）端到端拍多镜头电影短片，自我进化 / Direct multi-shot AI short films end-to-end with Google Flow (Veo 3.1), self-evolving |
 
 ### 办公效率 / Productivity
 | ID | 说明 / Description |
