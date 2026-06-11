@@ -11,10 +11,13 @@ A curated collection of AI skills. Each skill is a folder (centered on `SKILL.md
 **Claude Code（推荐）** — 一行命令装一个技能：
 
 ```bash
-npx degit shushuitie2017/picker-skills/<skill-id> ~/.claude/skills/<skill-id>
+npx degit shushuitie2017/picker-skills/<skill-id> "$HOME/.claude/skills/<skill-id>" --force
 # 例如 / e.g.
-npx degit shushuitie2017/picker-skills/oss-deep-analysis ~/.claude/skills/oss-deep-analysis
+npx degit shushuitie2017/picker-skills/oss-deep-analysis "$HOME/.claude/skills/oss-deep-analysis" --force
 ```
+
+> `"$HOME/..."` 写法在 Windows PowerShell / macOS / Linux 下通用（PowerShell 不展开 `~`，请勿用 `~` 写路径）；`--force` 使重装/更新时可覆盖已有目录。
+> The `"$HOME/..."` form works in Windows PowerShell, macOS and Linux alike (PowerShell does **not** expand `~`); `--force` allows reinstalling/updating over an existing folder.
 
 或克隆后拷贝 / or clone & copy:
 
